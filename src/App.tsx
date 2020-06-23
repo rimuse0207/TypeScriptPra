@@ -3,6 +3,8 @@ import "./style.scss";
 import InputType from "./components/InputType";
 import RedcuerPratice from "./components/ReducerPratice";
 import RefPractice from "./components/RefPractice";
+import TodoForm from "./components/ToDo/TodoForm";
+import TodoList from "./components/ToDo/TodoList";
 
 function App() {
   const onsubmit = (form: { name: string; desc: string }) => {
@@ -13,6 +15,8 @@ function App() {
       <InputType onSubmit={onsubmit}></InputType>
       <RedcuerPratice></RedcuerPratice>
       <RefPractice onSubmit={onsubmit}></RefPractice>
+      <TodoForm></TodoForm>
+      <TodoList></TodoList>
     </div>
   );
 }
