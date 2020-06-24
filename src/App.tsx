@@ -6,6 +6,7 @@ import RefPractice from "./components/RefPractice";
 import TodoForm from "./components/ToDo/TodoForm";
 import TodoList from "./components/ToDo/TodoList";
 import { TodosContextProvider } from "./contexts/TodosContext";
+import CounterContainer from "./containers/CounterContainer";
 
 function App() {
   const onsubmit = (form: { name: string; desc: string }) => {
@@ -20,6 +21,7 @@ function App() {
         <TodoForm></TodoForm>
         <TodoList></TodoList>
       </TodosContextProvider>
+      <CounterContainer></CounterContainer>
     </div>
   );
 }
